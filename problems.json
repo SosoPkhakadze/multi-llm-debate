@@ -1,0 +1,152 @@
+[
+  {
+    "id": "opt_01",
+    "category": "optimization",
+    "question": "A closed cylindrical can (top and bottom included) must hold exactly 500 cm^3. Using calculus, find the radius and height that minimize the total surface area, and compute that minimal surface area. Give radius, height and area numerically (2 decimal places), and state the relationship between h and r at the optimum.",
+    "answer": "r approx 4.30 cm, h approx 8.60 cm, minimal surface area approx 348.73 cm^2; at the optimum h = 2r (height equals diameter)"
+  },
+  {
+    "id": "opt_02",
+    "category": "optimization",
+    "question": "A farmer has exactly 600 m of fencing and wants to enclose a rectangular field that borders a straight river. No fence is needed along the river side. Derive the dimensions that maximize the enclosed area and compute that maximum area.",
+    "answer": "The two sides perpendicular to the river are 150 m each and the side parallel to the river is 300 m; maximum area = 45000 m^2"
+  },
+  {
+    "id": "opt_03",
+    "category": "optimization",
+    "question": "An open-top box is made from a 24 cm by 24 cm sheet of cardboard by cutting equal squares of side x from each corner and folding up the sides. Using calculus, find the value of x that maximizes the volume, and compute that maximum volume.",
+    "answer": "x = 4 cm, maximum volume = 1024 cm^3"
+  },
+  {
+    "id": "opt_04",
+    "category": "optimization",
+    "question": "Two positive numbers x and y satisfy x + y = 30. Using calculus, find the values of x and y that maximize the product P = x * y^2, and compute the maximum value of P.",
+    "answer": "x = 10, y = 20, maximum P = 4000"
+  },
+  {
+    "id": "opt_05",
+    "category": "optimization",
+    "question": "A 5-meter ladder leans against a vertical wall. The bottom of the ladder is pulled away from the wall at a constant rate of 1 m/s. Using related rates, determine how fast the top of the ladder is sliding down the wall at the exact moment when the bottom is 3 m from the wall. Show the derivation.",
+    "answer": "The top slides down at 0.75 m/s (dy/dt = -3/4 m/s) at that moment"
+  },
+  {
+    "id": "prob_01",
+    "category": "probability_expectation",
+    "question": "A fair coin is flipped repeatedly. Compute the expected number of flips until the pattern HH (two heads in a row) first appears, and the expected number of flips until the pattern HT first appears. Derive both values (e.g. with first-step/state equations) and explain in one sentence why they differ.",
+    "answer": "E[flips until HH] = 6 and E[flips until HT] = 4; HT is faster because a head already obtained is never wasted while waiting for T, whereas for HH a tail destroys all progress"
+  },
+  {
+    "id": "prob_02",
+    "category": "probability_expectation",
+    "question": "A gambler starts with $3 and bets $1 on a fair coin flip each round (win +$1, lose -$1). The game ends when the gambler reaches $10 or goes broke ($0). Compute the probability that the gambler reaches $10 before going broke, AND the expected number of rounds the game lasts. Show the derivation.",
+    "answer": "P(reach $10) = 3/10 = 0.3; expected duration = 21 rounds"
+  },
+  {
+    "id": "prob_03",
+    "category": "probability_expectation",
+    "question": "A fair six-sided die is rolled repeatedly. Compute the expected number of rolls needed to see all six faces at least once (the coupon collector problem for n = 6). Derive the answer as a sum and give the numeric value to one decimal place.",
+    "answer": "14.7 rolls"
+  },
+  {
+    "id": "prob_04",
+    "category": "probability_expectation",
+    "question": "Two fair six-sided dice are rolled once. Compute the expected value of the MAXIMUM of the two dice. Derive it exactly as a fraction and give the decimal value to 3 decimal places.",
+    "answer": "161/36, approximately 4.472"
+  },
+  {
+    "id": "prob_05",
+    "category": "probability_expectation",
+    "question": "Cards are drawn one at a time, without replacement, from a well-shuffled standard 52-card deck. Compute the expected position of the FIRST ace (i.e. the expected number of cards drawn until and including the first ace). Derive it exactly.",
+    "answer": "53/5 = 10.6"
+  },
+  {
+    "id": "phys_01",
+    "category": "applied_physics",
+    "question": "A block is released from rest on a 30-degree incline where the coefficient of kinetic friction is 0.20. Take g = 9.8 m/s^2. Compute (a) the block's acceleration along the incline and (b) the time it takes to slide 5.0 m from rest. Show all steps.",
+    "answer": "a approx 3.20 m/s^2, t approx 1.77 s"
+  },
+  {
+    "id": "phys_02",
+    "category": "applied_physics",
+    "question": "A ball is thrown horizontally at 15 m/s from the top of a 20 m cliff. Take g = 9.8 m/s^2 and ignore air resistance. Compute (a) the time of flight, (b) the horizontal distance from the cliff base where it lands, and (c) the speed at impact. Show all steps.",
+    "answer": "t approx 2.02 s, horizontal distance approx 30.3 m, impact speed approx 24.8 m/s"
+  },
+  {
+    "id": "phys_03",
+    "category": "applied_physics",
+    "question": "A spring with stiffness k = 200 N/m is compressed by 0.10 m and used to launch a 0.50 kg block along a frictionless horizontal surface, after which the block slides up a frictionless ramp. Take g = 9.8 m/s^2. Compute (a) the launch speed of the block and (b) the maximum height it reaches on the ramp. Use energy conservation and show the steps.",
+    "answer": "v = 2.0 m/s, h approx 0.204 m (about 20 cm)"
+  },
+  {
+    "id": "phys_04",
+    "category": "applied_physics",
+    "question": "A car drives around a flat, unbanked circular curve of radius 50 m. The coefficient of static friction between tires and road is 0.60. Take g = 9.8 m/s^2. Derive the maximum speed at which the car can take the curve without skidding, in m/s AND in km/h.",
+    "answer": "v_max approx 17.1 m/s, approximately 61.7 km/h"
+  },
+  {
+    "id": "phys_05",
+    "category": "applied_physics",
+    "question": "An RC circuit has R = 10 kOhm and C = 100 microfarads. The capacitor starts uncharged and is charged through the resistor by a 12 V source. Compute (a) the time constant, (b) the capacitor voltage 2.0 seconds after charging starts, and (c) the exact time at which the voltage reaches 6 V. Show the formulas used.",
+    "answer": "tau = 1.0 s, V(2 s) approx 10.4 V, time to reach 6 V approx 0.693 s (= ln 2 seconds)"
+  },
+  {
+    "id": "fin_01",
+    "category": "finance",
+    "question": "A $100,000 mortgage has a 6% nominal annual interest rate compounded monthly, and is repaid with equal monthly payments over 15 years. Using the annuity formula, compute (a) the monthly payment and (b) the total interest paid over the life of the loan. Show the formula and intermediate values.",
+    "answer": "Monthly payment approx $843.86, total interest approx $51,894 (values within a few dollars are fine)"
+  },
+  {
+    "id": "fin_02",
+    "category": "finance",
+    "question": "A project costs $10,000 today and returns $4,000 at the end of each of the next 3 years. The discount rate is 8% per year. Compute the Net Present Value (NPV) showing each discounted cash flow (or the annuity factor), and state whether the project should be accepted.",
+    "answer": "NPV approx +$308 (positive), so accept the project"
+  },
+  {
+    "id": "fin_03",
+    "category": "finance",
+    "question": "Money is invested at 7% annual compound interest. Compute (a) the EXACT time required for the investment to double (using logarithms, 2 decimal places) and (b) the estimate given by the Rule of 72, and state which is larger.",
+    "answer": "Exact doubling time approx 10.24 years; Rule of 72 gives approx 10.29 years; the Rule of 72 estimate is larger"
+  },
+  {
+    "id": "fin_04",
+    "category": "finance",
+    "question": "You deposit $200 at the end of every month for 10 years into an account earning a 6% nominal annual rate compounded monthly. Using the future value of annuity formula, compute (a) the final balance, (b) the total amount you contributed, and (c) the total interest earned. Show the formula.",
+    "answer": "Final balance approx $32,776, contributions $24,000, interest earned approx $8,776 (values within a few dollars are fine)"
+  },
+  {
+    "id": "fin_05",
+    "category": "finance",
+    "question": "Bank A offers a 12% nominal annual rate compounded MONTHLY. Bank B offers a 12% nominal annual rate compounded QUARTERLY. Compute the effective annual rate (EAR) of each to 4 decimal places (in percent), and state which bank gives the depositor more and by how many percentage points.",
+    "answer": "Bank A EAR approx 12.6825%, Bank B EAR approx 12.5509%, Bank A pays more by approx 0.13 percentage points"
+  },
+  {
+    "id": "disc_01",
+    "category": "discrete_math",
+    "question": "Find the smallest positive integer x that satisfies all three congruences simultaneously: x = 3 (mod 5), x = 4 (mod 7), x = 1 (mod 9). Solve it step by step with the Chinese Remainder Theorem and verify the answer against all three congruences.",
+    "answer": "x = 298"
+  },
+  {
+    "id": "disc_02",
+    "category": "discrete_math",
+    "question": "Compute 7^222 mod 11 without a calculator, using Fermat's little theorem. Show the reduction of the exponent and every step of the final computation.",
+    "answer": "5"
+  },
+  {
+    "id": "disc_03",
+    "category": "discrete_math",
+    "question": "Compute Euler's totient phi(360) from the prime factorization of 360, showing the formula, and then determine how many integers between 1 and 360 (inclusive) are NOT coprime to 360.",
+    "answer": "phi(360) = 96; the count of integers not coprime to 360 is 264"
+  },
+  {
+    "id": "disc_04",
+    "category": "discrete_math",
+    "question": "A sequence is defined by a(0) = 2, a(1) = 5, and a(n) = 3a(n-1) - 2a(n-2) for n >= 2. Using the characteristic equation, derive a closed-form formula for a(n), and use it to compute a(10). Show the derivation.",
+    "answer": "Closed form a(n) = 3 * 2^n - 1; a(10) = 3071"
+  },
+  {
+    "id": "disc_05",
+    "category": "discrete_math",
+    "question": "Working in base 7, compute 452_7 + 266_7. Do the addition digit by digit in base 7 showing the carries, give the result in base 7, and verify it by converting everything to base 10.",
+    "answer": "1051 in base 7 (equal to 379 in base 10)"
+  }
+]

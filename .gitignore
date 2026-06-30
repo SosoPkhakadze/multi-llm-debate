@@ -1,0 +1,7 @@
+# never commit API keys
+.env
+
+# python stuff
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
