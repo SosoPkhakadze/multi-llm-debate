@@ -1,0 +1,452 @@
+{
+  "opt_01": {
+    "openai": {
+      "answer": "Radius r = 4.30 cm, Height h = 8.60 cm, Minimal Surface Area = 348.52 cm². At optimum, height h is twice the radius r, i.e., h = 2r.",
+      "correct": false
+    },
+    "claude": {
+      "answer": "Radius r = 4.30 cm, Height h = 8.60 cm, Minimum surface area = 348.73 cm². At the optimum, h = 2r (the height equals twice the radius).",
+      "correct": true
+    },
+    "openai-35": {
+      "answer": "{\"radius\": 3.99, \"height\": 7.97, \"area\": 251.33}",
+      "correct": false
+    },
+    "claude-haiku": {
+      "answer": "Radius: r = 4.30 cm\nHeight: h = 8.60 cm\nMinimal Surface Area: S = 348.73 cm²\n\nRelationship at optimum: h = 2r (the height equals twice the radius)",
+      "correct": true
+    }
+  },
+  "opt_02": {
+    "openai": {
+      "answer": "The dimensions that maximize the area are 300 meters along the river and 150 meters perpendicular to the river, yielding a maximum enclosed area of 45,000 square meters.",
+      "correct": true
+    },
+    "claude": {
+      "answer": "The dimensions that maximize the enclosed area are: side parallel to the river = 300 m, and each side perpendicular to the river = 150 m. The maximum area is 45,000 m².",
+      "correct": true
+    },
+    "openai-35": {
+      "answer": "The dimensions that maximize the enclosed area are width x = 150 m and length y = 300 m, resulting in a maximum area of 45000 square meters.",
+      "correct": true
+    },
+    "claude-haiku": {
+      "answer": "The dimensions that maximize the enclosed area are: 300 m parallel to the river and 150 m perpendicular to the river (on each side). The maximum enclosed area is 45,000 m².",
+      "correct": true
+    }
+  },
+  "opt_03": {
+    "openai": {
+      "answer": "x = 4 cm; maximum volume = 1024 cm^3",
+      "correct": true
+    },
+    "claude": {
+      "answer": "x = 4 cm, maximum volume = 1024 cm³",
+      "correct": true
+    },
+    "openai-35": {
+      "answer": "1024 cm^3",
+      "correct": false
+    },
+    "claude-haiku": {
+      "answer": "The value of x that maximizes the volume is x = 4 cm. The maximum volume is 1024 cm³.",
+      "correct": true
+    }
+  },
+  "opt_04": {
+    "openai": {
+      "answer": "x = 10, y = 20, maximum product P = 4000",
+      "correct": true
+    },
+    "claude": {
+      "answer": "x = 10, y = 20, and the maximum value of P = 4000",
+      "correct": true
+    },
+    "openai-35": {
+      "answer": "The maximum value of P is 5625 when x = 15 and y = 15.",
+      "correct": false
+    },
+    "claude-haiku": {
+      "answer": "The values that maximize P = x * y^2 subject to x + y = 30 are x = 10 and y = 20. The maximum value of P is 4000.",
+      "correct": true
+    }
+  },
+  "opt_05": {
+    "openai": {
+      "answer": "The top of the ladder is sliding down the wall at 0.75 m/s when the bottom is 3 m from the wall.",
+      "correct": true
+    },
+    "claude": {
+      "answer": "The top of the ladder is sliding down the wall at 3/4 m/s (or 0.75 m/s) when the bottom is 3 m from the wall.",
+      "correct": true
+    },
+    "openai-35": {
+      "answer": "The top of the ladder is sliding down the wall at a rate of 4/3 m/s when the bottom is 3m from the wall.",
+      "correct": false
+    },
+    "claude-haiku": {
+      "answer": "The top of the ladder is sliding down the wall at a rate of 3/4 m/s (or 0.75 m/s) at the moment when the bottom is 3 m from the wall. The derivation uses the Pythagorean theorem (x² + y² = 25), implicit differentiation (2x·dx/dt + 2y·dy/dt = 0), and substitution of x = 3, y = 4, and dx/dt = 1 to get dy/dt = -3/4 m/s.",
+      "correct": true
+    }
+  },
+  "prob_01": {
+    "openai": {
+      "answer": "Expected flips until HH appears: 6; Expected flips until HT appears: 4; They differ because after an H, getting a T resets progress for HH but not for HT, making HT faster to appear on average.",
+      "correct": true
+    },
+    "claude": {
+      "answer": "Expected flips until HH: 6. Expected flips until HT: 4. They differ because after flipping H, getting T in the HH pattern forces a complete restart, while getting H in the HT pattern keeps you in a state where the next T completes the pattern.",
+      "correct": true
+    },
+    "openai-35": {
+      "answer": "{\"E_HH\": 6, \"E_HT\": 4}",
+      "correct": true
+    },
+    "claude-haiku": {
+      "answer": "Expected flips until HH: 6. Expected flips until HT: 4. They differ because HT can overlap with itself (H from HT can start a new HT pattern), while HH cannot overlap, so tails reset progress more severely for HH.",
+      "correct": true
+    }
+  },
+  "prob_02": {
+    "openai": {
+      "answer": "Probability = 0.3; Expected rounds = 21",
+      "correct": true
+    },
+    "claude": {
+      "answer": "Probability of reaching $10 before going broke: 3/10 = 0.3. Expected number of rounds: 21.",
+      "correct": true
+    },
+    "openai-35": {
+      "answer": "The probability of reaching $10 before going broke is 0.65625, and the expected number of rounds the game lasts is 14.4.",
+      "correct": false
+    },
+    "claude-haiku": {
+      "answer": "Probability of reaching $10 before going broke: 3/10 = 0.3\nExpected number of rounds: 21",
+      "correct": true
+    }
+  },
+  "prob_03": {
+    "openai": {
+      "answer": "E(6) = 6 * (1 + 1/2 + 1/3 + 1/4 + 1/5 + 1/6) = 6 * 2.45 = 14.7 rolls",
+      "correct": true
+    },
+    "claude": {
+      "answer": "The expected number of rolls is E = 6/1 + 6/2 + 6/3 + 6/4 + 6/5 + 6/6 = 6(1 + 1/2 + 1/3 + 1/4 + 1/5 + 1/6) = 14.7",
+      "correct": true
+    },
+    "openai-35": {
+      "answer": "21",
+      "correct": false
+    },
+    "claude-haiku": {
+      "answer": "The expected number of rolls needed to see all six faces is E = 6(1/6 + 1/5 + 1/4 + 1/3 + 1/2 + 1) = 6 × 49/20 = 147/10 = 14.7",
+      "correct": true
+    }
+  },
+  "prob_04": {
+    "openai": {
+      "answer": "161/36, which is approximately 4.472",
+      "correct": true
+    },
+    "claude": {
+      "answer": "161/36 = 4.472",
+      "correct": true
+    },
+    "openai-35": {
+      "answer": "5.167",
+      "correct": false
+    },
+    "claude-haiku": {
+      "answer": "The expected value of the maximum of two fair six-sided dice is 161/36, which equals 4.472 (to 3 decimal places).",
+      "correct": true
+    }
+  },
+  "prob_05": {
+    "openai": {
+      "answer": "10.6",
+      "correct": true
+    },
+    "claude": {
+      "answer": "53/5 or 10.6",
+      "correct": true
+    },
+    "openai-35": {
+      "answer": "5.9231",
+      "correct": false
+    },
+    "claude-haiku": {
+      "answer": "The expected position of the first ace is 53/5 or 10.6.\n\nDerivation: Let X be the position of the first ace. We can write X = 1 + Y, where Y is the number of non-aces before the first ace.\n\nFor any specific non-ace card, consider it together with the 4 aces (5 cards total). By symmetry, this non-ace is equally likely to appear in any relative position among these 5 cards. It appears before the first ace if and only if it's in position 1 among these 5 cards, which occurs with probability 1/5.\n\nBy linearity of expectation over all 48 non-aces:\nE[Y] = 48 × (1/5) = 48/5\n\nTherefore:\nE[X] = 1 + 48/5 = 53/5",
+      "correct": true
+    }
+  },
+  "phys_01": {
+    "openai": {
+      "answer": "(a) The block's acceleration along the incline is approximately 3.20 m/s².\n(b) The time it takes to slide 5.0 m from rest is approximately 1.77 seconds.",
+      "correct": true
+    },
+    "claude": {
+      "answer": "(a) The block's acceleration along the incline is 3.2 m/s². (b) The time to slide 5.0 m is 1.8 s.",
+      "correct": false
+    },
+    "openai-35": {
+      "answer": "{'acceleration': 2.646 m/s^2, 'time': 3.37 s}",
+      "correct": false
+    },
+    "claude-haiku": {
+      "answer": "(a) The block's acceleration along the incline is a = 3.20 m/s² (or 3.2 m/s²)\n\n(b) The time to slide 5.0 m from rest is t = 1.77 s (or approximately 1.8 s)",
+      "correct": true
+    }
+  },
+  "phys_02": {
+    "openai": {
+      "answer": "(a) Time of flight ≈ 2.02 seconds\n(b) Horizontal distance ≈ 30.3 meters\n(c) Speed at impact ≈ 24.8 m/s",
+      "correct": true
+    },
+    "claude": {
+      "answer": "(a) Time of flight: 2.02 s, (b) Horizontal distance: 30.3 m, (c) Speed at impact: 24.8 m/s",
+      "correct": true
+    },
+    "openai-35": {
+      "answer": "{'time_of_flight': 2.02, 'horizontal_distance': 30.3, 'speed_at_impact': 15}",
+      "correct": false
+    },
+    "claude-haiku": {
+      "answer": "(a) Time of flight: t = √(40/9.8) ≈ 2.02 seconds\n(b) Horizontal distance: x = 15√(40/9.8) ≈ 30.3 m\n(c) Speed at impact: v = √617 ≈ 24.8 m/s",
+      "correct": true
+    }
+  },
+  "phys_03": {
+    "openai": {
+      "answer": "(a) Launch speed = 2 m/s\n(b) Maximum height = 0.204 m",
+      "correct": true
+    },
+    "claude": {
+      "answer": "(a) The launch speed of the block is 2.0 m/s. (b) The maximum height the block reaches on the ramp is 0.20 m (or 20 cm).",
+      "correct": true
+    },
+    "openai-35": {
+      "answer": "{\"a\": 1.4, \"b\": 0.715}",
+      "correct": false
+    },
+    "claude-haiku": {
+      "answer": "(a) The launch speed of the block is v₀ = 2.0 m/s\n\n(b) The maximum height reached on the ramp is h = 0.20 m (or 20 cm)\n\nSolution method: Using energy conservation, the elastic potential energy (1/2)kx² = 1.0 J is completely converted to kinetic energy at launch, giving v₀ = 2.0 m/s. This kinetic energy is then completely converted to gravitational potential energy at maximum height, yielding h = v₀²/(2g) = 0.20 m.",
+      "correct": true
+    }
+  },
+  "phys_04": {
+    "openai": {
+      "answer": "Maximum speed without skidding: approximately 17.15 m/s or 61.74 km/h.",
+      "correct": true
+    },
+    "claude": {
+      "answer": "The maximum speed is 17 m/s (or 62 km/h). More precisely: v_max = √(μ_s × g × r) = √(0.60 × 9.8 × 50) = √294 ≈ 17.1 m/s ≈ 61.7 km/h",
+      "correct": true
+    },
+    "openai-35": {
+      "answer": "Final maximum speed without skidding is 14.0 m/s or 50.4 km/h.",
+      "correct": false
+    },
+    "claude-haiku": {
+      "answer": "The maximum speed at which the car can take the curve without skidding is:\n\n**17.1 m/s** (or more precisely 17.15 m/s)\n\n**61.7 km/h** (or more precisely 61.73 km/h)\n\nThis is derived from v = √(μ_s × g × r) = √(0.60 × 9.8 × 50) = √294 ≈ 17.1 m/s",
+      "correct": true
+    }
+  },
+  "phys_05": {
+    "openai": {
+      "answer": "(a) Time constant \\( \\tau = R \\times C = 10,000 \\times 0.0001 = 1 \\text{ s} \\)\n\n(b) Voltage at 2 s: \\( V(2) = 12 \\times (1 - e^{-2/1}) = 12 \\times (1 - 0.1353) = 10.38 \\text{ V} \\)\n\n(c) Time to reach 6 V: \\( 6 = 12 \\times (1 - e^{-t}) \\Rightarrow e^{-t} = 0.5 \\Rightarrow t = -\\ln(0.5) = 0.693 \\text{ s} \\)",
+      "correct": true
+    },
+    "claude": {
+      "answer": "(a) Time constant τ = 1.0 second\n(b) Capacitor voltage at t = 2.0 s is V_C = 10.38 V\n(c) Time to reach 6 V is t = 0.693 seconds (or exactly ln(2) seconds)\n\nFormulas used:\n- Time constant: τ = RC\n- Charging voltage: V_C(t) = V_source(1 - e^(-t/τ))\n- Time for specific voltage: t = -τ × ln(1 - V_C/V_source)",
+      "correct": true
+    },
+    "openai-35": {
+      "answer": "{\"time_constant\": 1.0, \"capacitor_voltage_2s\": 9.0, \"time_to_reach_6V\": 2.0}",
+      "correct": false
+    },
+    "claude-haiku": {
+      "answer": "(a) Time constant τ = R × C = 10,000 Ω × 0.0001 F = 1.0 second\n\n(b) Capacitor voltage at t = 2.0 s: V_C(t) = V_source(1 - e^(-t/τ)) = 12(1 - e^(-2)) = 12(1 - 0.1353) = 10.4 V\n\n(c) Time to reach 6 V: 6 = 12(1 - e^(-t/1)) → e^(-t) = 0.5 → t = ln(2) = 0.693 seconds",
+      "correct": true
+    }
+  },
+  "fin_01": {
+    "openai": {
+      "answer": "(a) Monthly payment is approximately $844.00\n(b) Total interest paid over the life of the loan is approximately $51,920",
+      "correct": true
+    },
+    "claude": {
+      "answer": "(a) Monthly payment = $843.86; (b) Total interest paid = $51,894.80",
+      "correct": true
+    },
+    "openai-35": {
+      "answer": "{'monthly_payment': '843.86', 'total_interest_paid': '51,095.34'}",
+      "correct": false
+    },
+    "claude-haiku": {
+      "answer": "(a) Monthly Payment: $843.86\n\nUsing the annuity formula M = P × [i(1+i)^n] / [(1+i)^n - 1]\nWith P = $100,000, i = 0.005 (monthly), n = 180 months:\n- (1.005)^180 = 2.4533\n- M = 100,000 × [0.005 × 2.4533] / [2.4533 - 1]\n- M = 100,000 × 0.012266 / 1.4533\n- M = $843.86\n\n(b) Total Interest Paid: $51,894.80\n\nTotal amount paid = $843.86 × 180 = $151,894.80\nTotal interest = $151,894.80 - $100,000 = $51,894.80",
+      "correct": true
+    }
+  },
+  "fin_02": {
+    "openai": {
+      "answer": "The NPV is approximately $307.66, so the project should be accepted.",
+      "correct": true
+    },
+    "claude": {
+      "answer": "NPV = $308.39. Discounted cash flows: Year 1: $3,703.70, Year 2: $3,429.36, Year 3: $3,175.33 (or annuity factor: 2.5771). Since NPV > 0, the project should be ACCEPTED.",
+      "correct": true
+    },
+    "openai-35": {
+      "answer": "The Net Present Value (NPV) of the project is $1,360.47. Since the NPV is positive, the project should be accepted.",
+      "correct": false
+    },
+    "claude-haiku": {
+      "answer": "NPV Calculation:\n- Year 0: -$10,000 (initial cost)\n- Year 1: $4,000 / 1.08 = $3,703.70\n- Year 2: $4,000 / 1.1664 = $3,429.36\n- Year 3: $4,000 / 1.2597 = $3,175.89\n\nAlternatively using annuity factor (2.5771): $4,000 × 2.5771 = $10,308.40\n\nNPV = -$10,000 + $10,308.40 = $308.40\n\nDecision: ACCEPT the project. The positive NPV of $308.40 indicates the project creates value and exceeds the 8% required return.",
+      "correct": true
+    }
+  },
+  "fin_03": {
+    "openai": {
+      "answer": "(a) Exact time to double: 10.25 years; (b) Rule of 72 estimate: 10.29 years; the Rule of 72 estimate is slightly larger.",
+      "correct": true
+    },
+    "claude": {
+      "answer": "(a) The exact time required is 10.24 years. (b) The Rule of 72 estimate is 10.29 years. The Rule of 72 estimate is larger.",
+      "correct": true
+    },
+    "openai-35": {
+      "answer": "{\"exact_time_years\": \"10.24\", \"rule_of_72_estimate_years\": \"10.29\", \"larger_value\": \"Rule of 72 estimate\"}",
+      "correct": true
+    },
+    "claude-haiku": {
+      "answer": "(a) Exact time required: 10.24 years\n(b) Rule of 72 estimate: 10.29 years\nThe Rule of 72 estimate is larger.",
+      "correct": true
+    }
+  },
+  "fin_04": {
+    "openai": {
+      "answer": "(a) Final balance = $32,776\n(b) Total amount contributed = $24,000\n(c) Total interest earned = $8,776\n\nFormula used: FV = PMT * [((1 + i)^n - 1) / i], where PMT = 200, i = 0.005, n = 120.",
+      "correct": true
+    },
+    "claude": {
+      "answer": "(a) Final balance: $32,775.87; (b) Total contributed: $24,000.00; (c) Total interest earned: $8,775.87. Formula used: FV = PMT × [(1 + i)^n - 1] / i, where PMT = $200, i = 0.005, n = 120",
+      "correct": true
+    },
+    "openai-35": {
+      "answer": "{\"final_balance\": \"29268.29\", \"total_contributed\": \"24000\", \"total_interest_earned\": \"5268.29\"}",
+      "correct": false
+    },
+    "claude-haiku": {
+      "answer": "(a) Final Balance: $32,775.87\n\nFormula: FV = PMT × [((1 + i)^n - 1) / i]\nWhere FV = 200 × [((1.005)^120 - 1) / 0.005] = 200 × 163.8793 = $32,775.87\n\n(b) Total Amount Contributed: $24,000 (200 × 120 months)\n\n(c) Total Interest Earned: $8,775.87 ($32,775.87 - $24,000)",
+      "correct": true
+    }
+  },
+  "fin_05": {
+    "openai": {
+      "answer": "Bank A EAR = 12.6825%, Bank B EAR = 12.5509%. Bank A offers a higher effective annual rate by 0.1316 percentage points.",
+      "correct": true
+    },
+    "claude": {
+      "answer": "Bank A EAR: 12.6825%, Bank B EAR: 12.5509%. Bank A gives the depositor more by 0.1316 percentage points.",
+      "correct": true
+    },
+    "openai-35": {
+      "answer": "{\"EAR_A\": \"12.6830%\", \"EAR_B\": \"12.5509%\", \"difference\": \"0.1321%\"}",
+      "correct": true
+    },
+    "claude-haiku": {
+      "answer": "Bank A (monthly compounding): EAR = 12.6825%. Bank B (quarterly compounding): EAR = 12.5509%. Bank A gives the depositor more by 0.1316 percentage points.",
+      "correct": true
+    }
+  },
+  "disc_01": {
+    "openai": {
+      "answer": "298",
+      "correct": true
+    },
+    "claude": {
+      "answer": "298",
+      "correct": true
+    },
+    "openai-35": {
+      "answer": "x = 214",
+      "correct": false
+    },
+    "claude-haiku": {
+      "answer": "298",
+      "correct": true
+    }
+  },
+  "disc_02": {
+    "openai": {
+      "answer": "5",
+      "correct": true
+    },
+    "claude": {
+      "answer": "5",
+      "correct": true
+    },
+    "openai-35": {
+      "answer": "4",
+      "correct": false
+    },
+    "claude-haiku": {
+      "answer": "7^222 ≡ 5 (mod 11)",
+      "correct": true
+    }
+  },
+  "disc_03": {
+    "openai": {
+      "answer": "phi(360) = 96; number of integers NOT coprime to 360 between 1 and 360 inclusive is 264.",
+      "correct": true
+    },
+    "claude": {
+      "answer": "phi(360) = 96, and 264 integers between 1 and 360 are NOT coprime to 360",
+      "correct": true
+    },
+    "openai-35": {
+      "answer": "264",
+      "correct": false
+    },
+    "claude-haiku": {
+      "answer": "φ(360) = 96 (using the formula φ(360) = 360 × (1 - 1/2) × (1 - 1/3) × (1 - 1/5) = 96). The number of integers between 1 and 360 that are NOT coprime to 360 is 360 - 96 = 264.",
+      "correct": true
+    }
+  },
+  "disc_04": {
+    "openai": {
+      "answer": "a(n) = -1 + 3 * 2^n; a(10) = 3071",
+      "correct": true
+    },
+    "claude": {
+      "answer": "The closed-form formula is a(n) = 3·2^n - 1, and a(10) = 3071",
+      "correct": true
+    },
+    "openai-35": {
+      "answer": "1025",
+      "correct": false
+    },
+    "claude-haiku": {
+      "answer": "The closed-form formula is a(n) = -1 + 3·2^n, and a(10) = 3071.",
+      "correct": true
+    }
+  },
+  "disc_05": {
+    "openai": {
+      "answer": "1051_7",
+      "correct": true
+    },
+    "claude": {
+      "answer": "1051_7",
+      "correct": true
+    },
+    "openai-35": {
+      "answer": "1155_7",
+      "correct": false
+    },
+    "claude-haiku": {
+      "answer": "452₇ + 266₇ = 1051₇\n\nBase 7 addition with carries:\n  ¹¹₇ (carries)\n  452₇\n+ 266₇\n------\n 1051₇\n\nVerification: 452₇ = 233₁₀, 266₇ = 146₁₀, sum = 379₁₀, and 1051₇ = 379₁₀ ✓",
+      "correct": true
+    }
+  }
+}
