@@ -1,0 +1,10 @@
+,value
+debate_system,1.0
+voting_baseline,0.96
+single_openai,0.96
+single_openai-35,0.16
+single_claude,0.96
+single_claude-haiku,1.0
+improvement_rate,0.48
+consensus_rate,0.6
+judge_accuracy_on_disagreements,1.0
